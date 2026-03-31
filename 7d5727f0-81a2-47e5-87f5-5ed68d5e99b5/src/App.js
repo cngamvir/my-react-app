@@ -16,11 +16,11 @@ export default function Board() {
     nextSquares[i] = "X";
     setSquares(nextSquares);
   }
-  
+
   return (
     <>
-      <div className="board-row">
-        <Square value={squares[0]} onSquareClick={handleClick} />
+     <div className="board-row">
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} />
         <Square value={squares[2]} />
       </div>
